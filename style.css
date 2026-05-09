@@ -352,7 +352,11 @@ img:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
-
+@media (max-width: 600px) {
+    .container, .row {
+        flex-direction: column; /* Mobile par sab ek ke niche ek aayega */
+    }
+}
 
 
 
