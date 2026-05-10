@@ -16,6 +16,134 @@ body{
 }
 .col-4{
     width: 33.33%;
+}/* Sabhi elements ke liye basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Mobile par logo aur text line badal lenge */
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background: linear-gradient(to bottom, #f90000, #ff990a);
+    padding: 20px;
+}
+
+.header h1 {
+    color: #000000;
+    text-shadow: white 0.1em 0.1em 0.2em;
+    text-align: center;
+    font-size: xx-large;
+}
+
+/* Navigation Menu */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000000;
+    padding: 10px;
+}
+
+.nav, .nav1, .nav2, .nav3, .nav4 {
+    flex: 1 1 120px; /* Ye lines ko fluid banata hai */
+    padding: 10px;
+    text-align: center;
+    background-color: #ff4500;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+.nav { background-color: transparent; }
+
+/* Main Content Section */
+.section {
+    display: flex;
+    flex-wrap: wrap; /* Sabse zaruri: Mobile par column ban jayega */
+    gap: 20px;
+    padding: 20px;
+    background-color: #2f00ff;
+}
+
+.box {
+    flex: 2 1 600px; /* Desktop par bada, mobile par full width */
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.form {
+    flex: 1 1 300px; /* Sidebar form */
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 20px;
+}
+fieldset{
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 10px !important;
+}
+ol{
+    padding-left: 25px;
+    list-style: inside;
+}
+ol li{
+    margin-bottom: 10px;
+    color: #000000;
+}
+/* Form Inputs */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Footer Sections */
+.footer, .footer2 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #b8b1af;
+    color: #000;
+}
+img{
+    cursor: pointer;
+    gap: 10px;
+    /* justify-content: space-around; */
+}
+
+.col-3 {
+    flex: 1 1 250px;
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid #000;
+}
+
+/* Mobile Specific Adjustments */
+@media (max-width: 768px) {
+    .col-3 {
+        border-right: none;
+        border-bottom: 1px solid #000;
+    }
+    
+    .box h2 {
+        padding-left: 0 !important; /* Mobile par text center */
+        text-align: center;
+    }
 }
 .col-5{
     width: 41.66%;
